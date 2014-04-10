@@ -46,4 +46,16 @@ it 'knows that 6 is VI' do
 	expect(blahblah(6)).to eq("VI")
 end
 
+it 'knows that 7 is VII' do
+	expect(blahblah(7)).to eq("VII")
+end
+
+it 'knows that 8 is VIII' do
+	expect(blahblah(8)).to eq("VIII")
+end
+
+it 'knows that 9 is IX' do
+	expect(blahblah(9)).to eq("IX")
+end
+
 end

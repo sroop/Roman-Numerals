@@ -25,8 +25,10 @@ def blahblah(number)
 		return numerals(1) * number
 	when 4
 		return numerals(1) + numerals(5)
-	when 6
-		return numerals(5) + (numerals 1)
+	when 6, 7, 8
+		return numerals(5) + (numerals(1) * (number - 5))
+	when 9
+		return numerals(1) + numerals(10)
 	end
 end
 
