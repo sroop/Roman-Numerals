@@ -20,6 +20,3 @@ def to_roman(number)
 	end
 result
 end
-
-
-
