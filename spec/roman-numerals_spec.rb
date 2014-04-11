@@ -3,59 +3,35 @@ require 'roman-numerals'
 describe "Roman Numerals" do
 
 it 'knows that I is 1' do
-expect(numerals(1)).to eq("I")
+expect(to_roman(1)).to eq("I")
 end
 
 it 'knows that V is 5' do
-	expect(numerals(5)).to eq("V")
+	expect(to_roman(5)).to eq("V")
 end
 
 it 'knows that X is 10' do
-	expect(numerals(10)).to eq("X")
+	expect(to_roman(10)).to eq("X")
 end
 
 it 'knows that L is 50' do
-expect(numerals(50)).to eq("L")
+expect(to_roman(50)).to eq("L")
 end
 
 it 'knows that C is 100' do
-	expect(numerals(100)).to eq("C")
+	expect(to_roman(100)).to eq("C")
 end
 
 it 'knows that D is 500' do
-	expect(numerals(500)).to eq("D")
+	expect(to_roman(500)).to eq("D")
 end
 
 it 'knows that M is 1000' do
-	expect(numerals(1000)).to eq("M")
-end
-
-it 'knows that 2 is II' do
-	expect(blahblah(2)).to eq("II")
-end
-
-it 'knows that 3 is III' do
-	expect(blahblah(3)).to eq("III")
+	expect(to_roman(1000)).to eq("M")
 end
 
 it 'knows that 4 is IV' do
-	expect(blahblah(4)).to eq("IV")
-end
-
-it 'knows that 6 is VI' do
-	expect(blahblah(6)).to eq("VI")
-end
-
-it 'knows that 7 is VII' do
-	expect(blahblah(7)).to eq("VII")
-end
-
-it 'knows that 8 is VIII' do
-	expect(blahblah(8)).to eq("VIII")
-end
-
-it 'knows that 9 is IX' do
-	expect(blahblah(9)).to eq("IX")
+	expect(to_roman(4)).to eq("IV")
 end
 
 end

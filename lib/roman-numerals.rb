@@ -1,34 +1,25 @@
-def numerals(number)
-	case number
-	when 1
-		return "I"
-	when 5
-		return "V"
-	when 10
-		return "X"
-	when 50
-		return "L"
-	when 100
-		return "C"
-	when 500
-		return "D"
-	when 1000
-		return "M"
-	else
-		blahblah(number)
+NUMERALS = { 
+1000 => "M",
+500 => "D",
+100 => "C",
+50 => "L",
+10 => "X",
+5 => "V",
+4 => "IV",
+1 => "I"
+}
+
+def to_roman(number)
+	result = ""
+	while number > 0
+		numeral = NUMERALS.select do |key, value|
+		key <= number
+		end
+	number = number - numeral.to_a[0][0]
+	result << numeral.to_a[0][1]
 	end
+result
 end
 
-def blahblah(number)
-	case number
-	when 2, 3
-		return numerals(1) * number
-	when 4
-		return numerals(1) + numerals(5)
-	when 6, 7, 8
-		return numerals(5) + (numerals(1) * (number - 5))
-	when 9
-		return numerals(1) + numerals(10)
-	end
-end
+
 
